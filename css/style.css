@@ -212,25 +212,24 @@ body {
     border-bottom: 0;
 }
 
-.page-header h2 {
-    margin-top: 0;
+.main-heading {
     text-align: center;
 }
 
 /* Testimonials */
 .client-testimonials h4 {
-    font-size: 2em;
+    font-size: 18px;
 }
 
 .client-testimonials p {
-    font-size: 1em;
+    font-size: 18px;
 }
 
 .testimonials .page-header {
     margin-bottom: 25px;
 }
 
-blockquote.testimonials {
+.testimonials {
     border-left: 0;
 }
 
