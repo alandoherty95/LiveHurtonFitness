@@ -1,86 +1,42 @@
 body {
-  font-size: 20px;
-  color: #212529;
-  font-family: 'Lora', 'Times New Roman', serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-p {
-  line-height: 1.5;
-  margin: 30px 0;
+/* Containers */
+.container-wrapper {
+    margin: 0;
 }
 
-p a {
-  text-decoration: underline;
+.callout-container {
+    height: 100vh;
+
+    background: url('https://github.com/alandoherty95/HurtonFitnessLive/blob/master/static/img/iain-cover-image.jpg?raw=true') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 800;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }
 
-a {
-  color: #212529;
-  transition: all 0.2s;
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
 }
 
-a:focus, a:hover {
-  color: #0085A1;
-}
-
-blockquote {
-  font-style: italic;
-  color: #868e96;
-}
-
-.section-heading {
-  font-size: 36px;
-  font-weight: 700;
-  margin-top: 60px;
-}
-
-.caption {
-  font-size: 14px;
-  font-style: italic;
-  display: block;
-  margin: 0;
-  padding: 10px;
-  text-align: center;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-
-::-moz-selection {
-  color: #fff;
-  background: #0085A1;
-  text-shadow: none;
-}
-
-::selection {
-  color: #fff;
-  background: #0085A1;
-  text-shadow: none;
-}
-
-img::-moz-selection {
-  color: #fff;
-  background: transparent;
-}
-
-img::selection {
-  color: #fff;
-  background: transparent;
-}
-
-img::-moz-selection {
-  color: #fff;
-  background: transparent;
-}
-
+/* Navbar */
 #mainNav {
   position: absolute;
   border-bottom: 1px solid #e9ecef;
@@ -163,101 +119,141 @@ img::-moz-selection {
   }
 }
 
-header.masthead {
-  margin-bottom: 50px;
-  background: no-repeat center center;
-  background-color: #868e96;
-  background-attachment: scroll;
-  position: relative;
-  background-size: cover;
+/* Jumbotron */
+
+.jumbotron {
+    background-color: transparent;
 }
 
-header.masthead .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #212529;
-  opacity: 0.5;
+.jumbotron h1 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 6em;
 }
 
-header.masthead .page-heading,
-header.masthead .post-heading,
-header.masthead .site-heading {
-  padding: 200px 0 150px;
-  color: white;
+.jumbotron .roles {
+    margin: 25px 0;
+    color: white;
+    font-size: 2em;
 }
 
-@media only screen and (min-width: 768px) {
-  header.masthead .page-heading,
-  header.masthead .post-heading,
-  header.masthead .site-heading {
-    padding: 200px 0;
-  }
+.jumbotron small {
+    font-size: 60%;
+    font-style: italic;
 }
 
-header.masthead .page-heading,
-header.masthead .site-heading {
-  text-align: center;
+/* Block dividers */
+
+.block-divider {
+    width: 75px;
+    height: 5px;
+    border: 0;
+    background-color: #444;
 }
 
-header.masthead .page-heading h1,
-header.masthead .site-heading h1 {
-  font-size: 50px;
-  margin-top: 0;
+.block-divider--yellow {
+    background-color: #eec802;
 }
 
-header.masthead .page-heading .subheading,
-header.masthead .site-heading .subheading {
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 1.1;
-  display: block;
-  margin: 10px 0 0;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+.block-divider--white {
+    background-color: white;
 }
 
-@media only screen and (min-width: 768px) {
-  header.masthead .page-heading h1,
-  header.masthead .site-heading h1 {
-    font-size: 80px;
-  }
+.block-divider--short {
+    width: 35px;
 }
 
-header.masthead .post-heading h1 {
-  font-size: 35px;
+/* Buttons */
+
+.btn--cta {
+    font-weight: bold;
+    border-radius: 23px;
+    width: 160px;
 }
 
-header.masthead .post-heading .meta,
-header.masthead .post-heading .subheading {
-  line-height: 1.1;
-  display: block;
+.btn--red {
+    color: white;
+    background-color: #f05f40;
+    border-color: #f05f40;
 }
 
-header.masthead .post-heading .subheading {
-  font-size: 24px;
-  font-weight: 600;
-  margin: 10px 0 30px;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+.btn--red:hover,
+.btn--red:active,
+.btn--red:focus,
+.btn--red:active:focus {
+    background-color: #df4929;
+    border-color: #df4929;
+    color: white;
 }
 
-header.masthead .post-heading .meta {
-  font-size: 20px;
-  font-weight: 300;
-  font-style: italic;
-  font-family: 'Lora', 'Times New Roman', serif;
+/* Alert */
+
+.alert-container .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0;
 }
 
-header.masthead .post-heading .meta a {
-  color: #fff;
+.site-wide-alert {
+    color: #544600;
+    background-color: #eec802;
+    border-color: #eec802;
+    padding: 5px 15px;
+    margin-bottom: 0;
+    border: 1px solid transparent;
+    border-radius: 0;
 }
 
-@media only screen and (min-width: 768px) {
-  header.masthead .post-heading h1 {
-    font-size: 55px;
-  }
-  header.masthead .post-heading .subheading {
-    font-size: 30px;
-  }
+/* Page Headers */
+
+.page-header {
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+.page-header h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+/* Testimonials */
+.client-testimonials h4 {
+    font-size: 2em;
+}
+
+.client-testimonials p {
+    font-size: 1em;
+}
+
+.testimonials .page-header {
+    margin-bottom: 25px;
+}
+
+blockquote.testimonials {
+    border-left: 0;
+}
+
+/* Features */
+
+.feature {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature .glyphicon {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.feature .btn {
+    background-color: white;
+    border-color: white;
+    border-radius: 15px;
+    min-width: 100px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #f05f40;
 }
